@@ -148,16 +148,10 @@
 % save the original href command in a new command:
 \let\hrefWithoutArrow\href
 
-% new command for external links:
-
+% Simplified AND command for dividers
+\newcommand{\AND}{~~~~~|~~~~~}
 
 \begin{document}
-    \newcommand{\AND}{\unskip
-        \cleaders\copy\ANDbox\hskip\wd\ANDbox
-        \ignorespaces
-    }
-    \newsavebox\ANDbox
-    \sbox\ANDbox{$|$}
 
     \begin{header}
         \fontsize{25 pt}{25 pt}\selectfont Kalana Liyanage
@@ -165,26 +159,16 @@
         \vspace{5 pt}
 
         \normalsize
-        \mbox{540/3, Kurundakanda, Labuduwa, Akmeemana, Sri Lanka}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{mailto:Kalanap.23@cse.mrt.ac.lk}{Kalanap.23@cse.mrt.ac.lk}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{tel:+94717524388}{+94 71 752 4388}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
+        \begin{center}
+        \mbox{540/3, Kurundakanda, Labuduwa, Akmeemana, Sri Lanka}\AND
+        \mbox{\hrefWithoutArrow{mailto:Kalanap.23@cse.mrt.ac.lk}{Kalanap.23@cse.mrt.ac.lk}}\AND
+        \mbox{\hrefWithoutArrow{tel:+94717524388}{+94 71 752 4388}}
         
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/kalana-liyanage}{https://www.linkedin.com/in/kalana-liyanage}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://github.com/Kalana-Pankaja}{github.com/Kalana-Pankaja}}%
+        \vspace{0.2cm}
+        
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/kalana-liyanage}{https://www.linkedin.com/in/kalana-liyanage}}\AND
+        \mbox{\hrefWithoutArrow{https://github.com/Kalana-Pankaja}{github.com/Kalana-Pankaja}}
+        \end{center}
     \end{header}
 
     \vspace{5 pt - 0.3 cm}
@@ -216,6 +200,7 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
+                \item GPA: 3.61/4.0 
                 \item \textbf{Coursework:} Program Construction, Data Structures and Algorithms, Computer Organization and Digital Design, Theory of Electricity, Mathematics
                 \item Registration Number: 230461T
             \end{highlights}
@@ -244,7 +229,7 @@
         \begin{onecolentry}
             \begin{highlights}
                 \item G.C.E Ordinary Level Examination (2018)
-                7A's and 2B's (including Mathematics, English, Science, Business Studies and Acounting,Appreciation of English Literary Text, and Information Communication Technology)
+                7A's and 2B's (including Mathematics, English, Science, Business Studies, Accounts, Appreciation of English Literary Text, and Information Communication Technology)
             \end{highlights}
         \end{onecolentry}
 
